@@ -45,6 +45,6 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Push to Docker Hub
       uses: docker/build-push-action@v1
-        with:
-          push: true
-          tag: ${{ secrets.DOCKER_USERNAME }}/infra_actions:latest
+      with:
+        push: true
+        tag: ${{ secrets.DOCKER_USERNAME }}/infra_actions:latest
