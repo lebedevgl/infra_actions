@@ -50,8 +50,8 @@ jobs:
       name: Push to Docker Hub
       uses: docker/build-push-action@v4
       with:
-        context .
-        file ./Dockerfile
+        context: .
+        file: ./Dockerfile
         push: true
         tag: ${{ secrets.DOCKER_USERNAME }}/infra_actions:latest
 
